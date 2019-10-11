@@ -1,0 +1,29 @@
+{
+    "name": "rootinc/app-creator",
+    "description": "Heroku App Creator",
+    "type": "library",
+    "require": {
+        "php": ">=5.6.4",
+        "laravel/framework": ">=5.4.0",
+        "aws/aws-sdk-php-laravel": "^3.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Root Inc",
+            "email": "djewett@rootinc.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "RootInc\\AppCreator\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RootInc\\AppCreator\\AppCreatorServiceProvider"
+            ]
+        }
+    }
+}
