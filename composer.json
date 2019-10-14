@@ -1,6 +1,6 @@
 {
-    "name": "rootinc/app-creator",
-    "description": "Heroku App Creator",
+    "name": "rootinc/laravel-heroku-app-creator",
+    "description": "Laravel Heroku App Creator",
     "type": "library",
     "require": {
         "php": ">=5.6.4",
@@ -16,13 +16,13 @@
     ],
     "autoload": {
         "psr-4": {
-            "RootInc\\AppCreator\\": "src/"
+            "RootInc\\LaravelHerokuAppCreator\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "RootInc\\AppCreator\\AppCreatorServiceProvider"
+                "RootInc\\LaravelHerokuAppCreator\\AppCreatorServiceProvider"
             ]
         }
     }
