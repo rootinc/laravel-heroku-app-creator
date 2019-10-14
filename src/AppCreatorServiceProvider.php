@@ -1,6 +1,6 @@
 <?php
 
-namespace RootInc\AppCreator;
+namespace RootInc\LaravelHerokuAppCreator;
 
 use Illuminate\Support\ServiceProvider;
 
