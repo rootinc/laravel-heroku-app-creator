@@ -20,10 +20,10 @@ Route::get('/create-app', '\RootInc\LaravelHerokuAppCreator\AppCreator@route');
 
 ## Contributing
 
-Thank you for considering contributing to the Laravel Azure Middleware! To encourage active collaboration, we encourage pull requests, not just issues.
+Thank you for considering contributing to the Laravel Heroku App Creator! To encourage active collaboration, we encourage pull requests, not just issues.
 
 If you file an issue, the issue should contain a title and a clear description of the issue. You should also include as much relevant information as possible and a code sample that demonstrates the issue. The goal of a issue is to make it easy for yourself - and others - to replicate the bug and develop a fix.
 
 ## License
 
-The Laravel Azure Middleware is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+The Laravel Heroku App Creator is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
