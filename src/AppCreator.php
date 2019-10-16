@@ -173,7 +173,7 @@ class AppCreator
     {
         $this->s3Client->putObject([
             'ACL' => 'private',
-            'Bucket' => config('app_creator.aws_bucket')
+            'Bucket' => config('app_creator.aws_bucket'),
             'Key' => $heroku_app_name . '/'
         ]);
     }
