@@ -55,7 +55,7 @@ class AppCreator
      * @param String $heroku_app_name
      * @return String
      */
-    public function createUrl($heroku_app_url, $heroku_app_name)
+    public function createUrl($heroku_app_name, $heroku_app_url)
     {
         $url = $this->heroku_url . '?template=' . urlencode(config('app_creator.template_url'));
 
