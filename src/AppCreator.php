@@ -63,7 +63,7 @@ class AppCreator
 
         list($heroku_aws_key, $heroku_aws_secret) = $this->createAndSetAWS($heroku_app_name);
 
-        $this->urlConcatenate($url, $heroku_app_name, $heroku_app_url, $heroku_app_key, $heroku_aws_key, $awsSecret);
+        $this->urlConcatenate($url, $heroku_app_name, $heroku_app_url, $heroku_app_key, $heroku_aws_key, $heroku_aws_secret);
 
         return $url;
     }
