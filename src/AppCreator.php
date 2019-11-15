@@ -83,8 +83,8 @@ class AppCreator
     {
         $url .= '&env[APP_KEY]=' . urlencode($heroku_app_key);
         $url .= '&env[APP_URL]=' . urlencode($heroku_app_url);
-        $url .= '&env[AWS_KEY]=' . urlencode($heroku_aws_key);
-        $url .= '&env[AWS_SECRET]=' . urlencode($heroku_aws_secret);
+        $url .= '&env[AWS_ACCESS_KEY_ID]=' . urlencode($heroku_aws_key);
+        $url .= '&env[AWS_SECRET_ACCESS_KEY]=' . urlencode($heroku_aws_secret);
         $url .= '&env[AWS_UPLOAD_FOLDER]=' . urlencode($heroku_app_name);
     }
 
