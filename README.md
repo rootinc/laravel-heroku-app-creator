@@ -12,11 +12,11 @@ Route::get('/create-app', '\RootInc\LaravelHerokuAppCreator\AppCreator@route');
 ```
 
 4. In our `.env` add `AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_REGION and AWS_BUCKET`.  The access key and secret key is used to create S3 folders and IAM users, so be sure this programmatic user has the correct permissions.  The `AWS_BUCKET` is where all the apps folders will get generated.
-5. Also in our `.env` add `IAM_GROUP, and TEMPLATE_URL`.  `IAM_GROUP` is the name of the group you want to assign the newly created AWS user for each Heroku app.  `TEMPLATE_URL` is the url used with Heroku to create a new app.  Make sure this repo has an app.json file.  Ex: `TEMPLATE_URL=https://github.com/rootinc/laravel-heroku-app-creator/tree/master`.
+5. Also in our `.env` add `IAM_GROUP`, and `TEMPLATE_URL`.  `IAM_GROUP` is the name of the group you want to assign the newly created AWS user for each Heroku app.  `TEMPLATE_URL` is the url used with Heroku to create a new app.  Make sure this repo has an app.json file.  Ex: `TEMPLATE_URL=https://github.com/rootinc/laravel-heroku-app-creator/tree/master`.
 
 ## Routing
 
-`Route::get('/create-app/azure', '\RootInc\LaravelHerokuAppCreator\AppCreator@route');` First parameter can be wherever you want to route the app creator route.  Change as you would like.
+`Route::get('/create-app', '\RootInc\LaravelHerokuAppCreator\AppCreator@route');` First parameter can be wherever you want to route the app creator route.  Change as you would like.
 
 ## Contributing
 
