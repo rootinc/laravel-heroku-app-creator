@@ -33,4 +33,14 @@ return [
     |
     */
     'aws_bucket' => env('AWS_BUCKET'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | AWS Default Region
+    |--------------------------------------------------------------------------
+    |
+    | The default region of the app we are creating the S3 folder in
+    |
+    */
+    'aws_default_region' => env('AWS_DEFAULT_REGION'),
 ];

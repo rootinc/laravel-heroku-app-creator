@@ -24,7 +24,9 @@ class AppCreator
     public function __construct()
     {
         $this->iamClient = AWS::createClient('iam');
-        $this->s3Client = AWS::createClient('s3');
+        $this->s3Client = AWS::createClient('s3', [
+            'region' => config('app_creator.aws_default_region')
+        ]);
     }
 
     /**
