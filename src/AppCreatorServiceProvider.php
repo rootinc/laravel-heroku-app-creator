@@ -17,7 +17,7 @@ class AppCreatorServiceProvider extends ServiceProvider
         {
             $this->publishes([
                 __DIR__ . '/../config/app_creator.php' => config_path('app_creator.php'),
-            ], 'app-creator-config');
+            ], 'config');
         }
     }
 
