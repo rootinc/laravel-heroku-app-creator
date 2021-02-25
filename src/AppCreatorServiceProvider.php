@@ -19,11 +19,15 @@ class AppCreatorServiceProvider extends ServiceProvider
                 __DIR__ . '/../config/app_creator.php' => config_path('app_creator.php'),
             ], 'app-creator-config');
         }
-        else
-        {
-            $this->mergeConfigFrom(
-                __DIR__ . '/../config/app_creator.php', 'app_creator'
-            );
-        }
+    }
+
+     /**
+     * {@inheritdoc}
+     */
+    public function register()
+    {
+        $this->mergeConfigFrom(
+            __DIR__ . '/../config/app_creator.php', 'app_creator'
+        );
     }
 }
